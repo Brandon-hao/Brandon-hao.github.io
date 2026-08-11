@@ -19,25 +19,26 @@
   <meta name="author" content="Menghao Zhang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="研究背景与技术瓶颈水下电声换能系统的探测距离与发射功率直接相关，而超磁致伸缩换能器（GMT）在宽频带内呈现强感性阻抗特性，导致功放输出大量无功功率，严重限制有源功率传输与声源级提升。 传统匹配方案存在三大难以兼顾的矛盾：  带宽与精度的矛盾：固定LC网络带宽极窄，离散开关电容阵列存在匹配盲区，无法实现全频段无断点匹配 动态切换与可靠性的矛盾：常规继电器、接触器切换电容会产生巨大的浪涌电流与电压尖峰">
+    <meta name="description" content="研究背景与技术瓶颈水下电声换能系统的探测距离与发射功率直接相关，而超磁致伸缩换能器（GMT）在宽频带内呈现强感性阻抗特性，导致功放输出大量无功功率，严重限制有源功率传输与声源级提升。 目前还没有可控阻抗匹配装置投入使用，原因在于：  带宽与精度的矛盾：固定LC网络带宽极窄，离散开关电容阵列存在匹配盲区且无法在线投切；有源阻抗匹配网络直流侧需要较高电压，成本高 动态切换与可靠性的矛盾：常规继电器、接">
 <meta property="og:type" content="article">
 <meta property="og:title" content="混合开关电容宽带阻抗匹配网络研究">
 <meta property="og:url" content="https://brandon-hao.github.io/2026/07/13/%E6%B7%B7%E5%90%88%E5%BC%80%E5%85%B3%E7%94%B5%E5%AE%B9%E5%AE%BD%E5%B8%A6%E9%98%BB%E6%8A%97%E5%8C%B9%E9%85%8D%E7%BD%91%E7%BB%9C%E7%A0%94%E7%A9%B6/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="研究背景与技术瓶颈水下电声换能系统的探测距离与发射功率直接相关，而超磁致伸缩换能器（GMT）在宽频带内呈现强感性阻抗特性，导致功放输出大量无功功率，严重限制有源功率传输与声源级提升。 传统匹配方案存在三大难以兼顾的矛盾：  带宽与精度的矛盾：固定LC网络带宽极窄，离散开关电容阵列存在匹配盲区，无法实现全频段无断点匹配 动态切换与可靠性的矛盾：常规继电器、接触器切换电容会产生巨大的浪涌电流与电压尖峰">
+<meta property="og:description" content="研究背景与技术瓶颈水下电声换能系统的探测距离与发射功率直接相关，而超磁致伸缩换能器（GMT）在宽频带内呈现强感性阻抗特性，导致功放输出大量无功功率，严重限制有源功率传输与声源级提升。 目前还没有可控阻抗匹配装置投入使用，原因在于：  带宽与精度的矛盾：固定LC网络带宽极窄，离散开关电容阵列存在匹配盲区且无法在线投切；有源阻抗匹配网络直流侧需要较高电压，成本高 动态切换与可靠性的矛盾：常规继电器、接">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://brandon-hao.github.io/images/hsccimn-platform.png">
-<meta property="og:image" content="https://brandon-hao.github.io/images/hsccimn-steady.png">
-<meta property="og:image" content="https://brandon-hao.github.io/images/hsccimn-gain.png">
+<meta property="og:image" content="https://brandon-hao.github.io/images/HSCCIMN%E5%AE%9E%E9%AA%8C%E5%B9%B3%E5%8F%B0.png">
+<meta property="og:image" content="https://brandon-hao.github.io/images/HSCCIMN%E6%B3%A2%E5%BD%A21.png">
+<meta property="og:image" content="https://brandon-hao.github.io/images/HSCCIMN%E6%B3%A2%E5%BD%A22.png">
+<meta property="og:image" content="https://brandon-hao.github.io/images/HSCCIMN%E6%9B%B2%E7%BA%BF.png">
 <meta property="og:image" content="https://brandon-hao.github.io/images/HSCCIMN%E8%AE%BA%E6%96%87.png">
 <meta property="article:published_time" content="2026-07-12T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-08-10T15:04:36.728Z">
+<meta property="article:modified_time" content="2026-08-11T14:06:01.189Z">
 <meta property="article:author" content="Menghao Zhang">
+<meta property="article:tag" content="功率因数">
 <meta property="article:tag" content="阻抗匹配">
 <meta property="article:tag" content="无功补偿">
-<meta property="article:tag" content="功率因数">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://brandon-hao.github.io/images/hsccimn-platform.png">
+<meta name="twitter:image" content="https://brandon-hao.github.io/images/HSCCIMN%E5%AE%9E%E9%AA%8C%E5%B9%B3%E5%8F%B0.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -168,30 +169,6 @@
             </li>
           
         
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
-                <i class="iconfont icon-user-fill"></i>
-                <span>About</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/lab/" target="_self">
-                
-                <span>实验平台</span>
-              </a>
-            </li>
-          
-        
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
@@ -274,34 +251,6 @@
             </div>
           
         
-          
-          
-          
-          
-            <div class="col-4 mobile-grid-cell">
-              <a href="/about/" target="_self">
-                <div class="mobile-grid-item">
-                  <i class="iconfont icon-user-fill"></i>
-                  <span>About</span>
-                </div>
-              </a>
-            </div>
-          
-        
-          
-          
-          
-          
-            <div class="col-4 mobile-grid-cell">
-              <a href="/lab/" target="_self">
-                <div class="mobile-grid-item">
-                  <i class="iconfont icon-link-fill"></i>
-                  <span>实验平台</span>
-                </div>
-              </a>
-            </div>
-          
-        
         
           <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
             <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
@@ -361,7 +310,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2k words
+          1.9k words
         
       </span>
     
@@ -372,7 +321,7 @@
         
         
         
-          17 mins
+          16 mins
         
       </span>
     
@@ -417,54 +366,49 @@
               <div class="markdown-body">
                 
                 <h2 id="研究背景与技术瓶颈"><a href="#研究背景与技术瓶颈" class="headerlink" title="研究背景与技术瓶颈"></a>研究背景与技术瓶颈</h2><p>水下电声换能系统的探测距离与发射功率直接相关，而超磁致伸缩换能器（GMT）在宽频带内呈现强感性阻抗特性，导致功放输出大量无功功率，严重限制有源功率传输与声源级提升。</p>
-<p>传统匹配方案存在三大难以兼顾的矛盾：</p>
+<p>目前还没有可控阻抗匹配装置投入使用，原因在于：</p>
 <ol>
-<li><strong>带宽与精度的矛盾</strong>：固定LC网络带宽极窄，离散开关电容阵列存在匹配盲区，无法实现全频段无断点匹配</li>
+<li><strong>带宽与精度的矛盾</strong>：固定LC网络带宽极窄，离散开关电容阵列存在匹配盲区且无法在线投切；有源阻抗匹配网络直流侧需要较高电压，成本高</li>
 <li><strong>动态切换与可靠性的矛盾</strong>：常规继电器、接触器切换电容会产生巨大的浪涌电流与电压尖峰，无法在线动态切换，且易损坏器件</li>
-<li><strong>匹配效果与波形保真的矛盾</strong>：传统可调电容方案谐波失真大，无法满足水声探测对波形高保真的严苛要求</li>
 </ol>
-<p>针对上述问题，本项目提出<strong>混合开关电容阻抗匹配网络（HSCCIMN）</strong>，采用「离散粗调+连续细调」的两级架构，在无源方案框架内实现了宽频无盲区、无冲击切换、低谐波高保真的阻抗匹配效果。</p>
+<p>针对上述问题，本项目提出<strong>混合开关电容阻抗匹配网络（HSCCIMN）</strong>，采用「离散粗调+连续细调」的两级架构，基于纯无源架构，实现了宽频无盲区、无冲击切换、低谐波高保真的阻抗匹配效果。</p>
 <h2 id="核心方案：混合开关电容阻抗匹配网络（HSCCIMN）"><a href="#核心方案：混合开关电容阻抗匹配网络（HSCCIMN）" class="headerlink" title="核心方案：混合开关电容阻抗匹配网络（HSCCIMN）"></a>核心方案：混合开关电容阻抗匹配网络（HSCCIMN）</h2><p>本方案为纯无源电力电子拓扑，串联在功放与换能器之间，通过动态调节等效电容值抵消换能器的感性无功，使系统工作在串联谐振状态。</p>
-<h3 id="三大核心创新"><a href="#三大核心创新" class="headerlink" title="三大核心创新"></a>三大核心创新</h3><ol>
-<li><p><strong>粗精两级混合拓扑</strong><br>集成二进制加权离散电容阵列与连续相位控制开关电容支路。粗调支路快速覆盖大范围容值，细调支路填补离散步长盲区，实现700~1000Hz全频段无断点连续匹配。</p>
+<h3 id="所做出的贡献有："><a href="#所做出的贡献有：" class="headerlink" title="所做出的贡献有："></a>所做出的贡献有：</h3><ol>
+<li><p><strong>粗精两级混合拓扑</strong><br>集成二进制加权离散电容阵列与连续相位控制开关电容支路。粗调支路快速覆盖大范围容值，细调支路填补离散步长盲区，实现全频段无断点连续匹配。</p>
 </li>
 <li><p><strong>无冲击固态开关技术</strong><br>设计晶闸管-二极管反并联的固态开关单元，利用电压、电流过零点实现零电压开通、零电流关断，彻底消除传统电容切换的浪涌电流与电压尖峰，支持系统运行中在线动态切换。</p>
 </li>
 <li><p><strong>低谐波高保真设计</strong><br>开关电容支路的谐波幅值按1&#x2F;n³快速衰减，配合网络阻抗的天然滤波作用，全频段内负载电压总谐波失真（THD）低于3%，满足水声探测的高保真波形要求。</p>
 </li>
 </ol>
-<h2 id="我的核心工作与贡献"><a href="#我的核心工作与贡献" class="headerlink" title="我的核心工作与贡献"></a>我的核心工作与贡献</h2><p>本项目隶属于国家重大科研仪器研制项目，我作为方案牵头人独立完成从理论推导到样机验证的全流程研发，核心贡献如下：</p>
+<h2 id="我的核心工作与贡献"><a href="#我的核心工作与贡献" class="headerlink" title="我的核心工作与贡献"></a>我的核心工作与贡献</h2><p>本项目隶属于国家重大科研仪器研制项目，本人独立完成从理论推导到样机验证的全流程研发，核心贡献如下：</p>
 <ol>
 <li><strong>拓扑原创性提出</strong>：首次将「离散阵列+连续细调」的混合架构引入水声阻抗匹配领域，设计了晶闸管-二极管无冲击开关单元，解决了传统电容阵列无法在线动态切换的工程痛点</li>
 <li><strong>理论建模与参数设计</strong>：独立推导开关电容的等效电容解析模型与谐波特性，完成全频段参数优化与稳定性分析，建立了完整的设计方法论</li>
 <li><strong>控制算法开发</strong>：实现RLS阻抗辨识算法与增量式PI相位跟踪控制，完成两级协调控制逻辑的DSP代码编写与调试</li>
-<li><strong>实验平台全流程搭建</strong>：独立完成原理图设计、PCB绘制、样机焊接与系统联调，搭建了基于GMT换能器的完整测试平台</li>
+<li><strong>实验平台全流程搭建</strong>：独立完成原理图设计、PCB绘制、样机焊接与系统联调，自主搭建了完整的基于GMT换能器的测试平台</li>
 <li><strong>科研成果产出</strong>：基于本研究撰写SCI顶刊论文1篇（一作），形成发明专利1项，相关技术具备直接工程化应用价值</li>
 </ol>
-<h2 id="实验平台搭建与性能验证"><a href="#实验平台搭建与性能验证" class="headerlink" title="实验平台搭建与性能验证"></a>实验平台搭建与性能验证</h2><h3 id="测试平台概况"><a href="#测试平台概况" class="headerlink" title="测试平台概况"></a>测试平台概况</h3><p>自主搭建完整的实验验证平台，核心构成包括：</p>
-<ul>
-<li>主功率回路：二进制电容阵列、开关可控电容细调单元、固态开关驱动电路</li>
-<li>数字控制单元：TI TMS320F28379D DSP控制器</li>
-<li>负载对象：伞形超磁致伸缩换能器（GMT）</li>
-<li>测试设备：泰克MDO34示波器</li>
-</ul>
-<img src="/images/hsccimn-platform.png" srcset="/img/loading.gif" lazyload width="80%" alt="实验测试平台" style="border-radius: 8px; display: block; margin: 0 auto;">
+<img src="/images/HSCCIMN实验平台.png" srcset="/img/loading.gif" lazyload width="60%" alt="实验测试平台" style="border-radius: 8px; display: block; margin: 0 auto;">
 <em>HSCCIMN实验测试平台架构</em>
 
 <h3 id="关键性能测试结果"><a href="#关键性能测试结果" class="headerlink" title="关键性能测试结果"></a>关键性能测试结果</h3><p>通过多组对比实验验证了方案的综合性能：</p>
 <ol>
-<li><strong>有功功率大幅提升</strong>：700~1000Hz全频段内，输送到换能器的有功功率最高提升<strong>31倍</strong>，功放无功功率接近零</li>
+<li><strong>有功功率大幅提升</strong>：在700~1000Hz频段内，输送到换能器的有功功率最高提升<strong>31倍</strong>，功放无功功率接近零</li>
 <li><strong>无冲击动态切换</strong>：频率跳变或档位切换时无浪涌电流、无电压尖峰，约10ms内重新收敛至最优匹配状态</li>
 <li><strong>高波形保真度</strong>：全工作频段内负载电压THD稳定低于3%，满足水声探测的高精度要求</li>
 <li><strong>强环境适应性</strong>：负载阻抗突变时，系统可快速自适应调整，重新建立共轭匹配</li>
 </ol>
-<img src="/images/hsccimn-steady.png" srcset="/img/loading.gif" lazyload width="70%" alt="稳态匹配效果对比" style="border-radius: 8px; display: block; margin: 0 auto;">
+<img src="/images/HSCCIMN波形1.png" srcset="/img/loading.gif" lazyload width="80%" alt="稳态匹配效果对比" style="border-radius: 8px; display: block; margin: 0 auto;">
 <em>匹配前后稳态波形对比，匹配后功放电压电流完全同相</em>
 
-<img src="/images/hsccimn-gain.png" srcset="/img/loading.gif" lazyload width="70%" alt="有功功率增益效果" style="border-radius: 8px; display: block; margin: 0 auto;">
-<em>全频段有功功率提升效果，最高增益达31倍</em>
+<img src="/images/HSCCIMN波形2.png" srcset="/img/loading.gif" lazyload width="80%" alt="连续跳频波匹配效果" style="border-radius: 8px; display: block; margin: 0 auto;">
+<em>HSCCIMN在连续跳频波下的匹配效果</em>
 
-<h3 id="方案定位与优势对比"><a href="#方案定位与优势对比" class="headerlink" title="方案定位与优势对比"></a>方案定位与优势对比</h3><p>与有源阻抗匹配方案相比，本无源方案具备<strong>高效率、高功率密度、低损耗、无高压母线要求</strong>的优势，更适合大功率、长时工作的水下探测场景；与传统无源方案相比，实现了宽频连续可调、无冲击切换、低谐波失真的性能突破。</p>
+<img src="/images/HSCCIMN曲线.png" srcset="/img/loading.gif" lazyload width="80%" alt="有功功率增益效果" style="border-radius: 8px; display: block; margin: 0 auto;">
+<em>所设计频段内有功功率提升效果，其中(a)为功放输出的有功功率提升效果，(b)为有功功率增益，可以看到最高增益达31倍</em>
+
+<h3 id="方案定位与优势对比"><a href="#方案定位与优势对比" class="headerlink" title="方案定位与优势对比"></a>方案定位与优势对比</h3><p>与目前已有的有源阻抗匹配方案相比，本无源方案具备<strong>高效率、高带宽、低损耗、无高压母线要求</strong>的优势，更适合大功率、长时工作的水下探测场景；与传统无源方案相比，实现了宽频连续可调、无冲击切换、低谐波失真的性能突破。</p>
 <h2 id="科研产出"><a href="#科研产出" class="headerlink" title="科研产出"></a>科研产出</h2><h3 id="学术论文"><a href="#学术论文" class="headerlink" title="学术论文"></a>学术论文</h3><ul>
 <li><strong>一作论文</strong>：《A Hybrid Switch-Controlled Capacitor Impedance Matching Network for Broadband Underwater Acoustic Transducer》</li>
 <li>投稿期刊：IEEE Transactions on Power Electronics（SCI一区TOP期刊）</li>
@@ -479,7 +423,7 @@
 </div>
 <em>完整论文长图，可上下滚动查看全文</em>
 
-<h2 id="项目总结"><a href="#项目总结" class="headerlink" title="项目总结"></a>项目总结</h2><p>本研究提出的HSCCIMN方案突破了传统无源匹配网络的带宽限制与切换冲击问题，在保证高波形保真度的前提下实现了宽频连续自适应匹配。该方案与虚拟负电患有源方案形成技术互补，分别覆盖大功率稳态工况与强动态工况，为水下电声换能系统提供了完整的阻抗匹配解决方案，目前相关技术已应用于国家重大科研仪器项目的工程样机中。</p>
+<h2 id="项目总结"><a href="#项目总结" class="headerlink" title="项目总结"></a>项目总结</h2><p>本研究提出的HSCCIMN方案突破了传统无源匹配网络的带宽限制与切换冲击问题，在保证高波形保真度的前提下实现了宽频连续自适应匹配。该方案与虚拟负电感有源方案形成技术互补，分别覆盖水下通讯工况与大功率声纳探测工况，为水下电声换能系统提供了完整的阻抗匹配解决方案，目前相关技术已应用于国家重大科研仪器项目的声靶中。</p>
 
                 
               </div>
@@ -513,11 +457,11 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
+        <a href="/tags/%E5%8A%9F%E7%8E%87%E5%9B%A0%E6%95%B0/" class="print-no-link">#功率因数</a>
+      
         <a href="/tags/%E9%98%BB%E6%8A%97%E5%8C%B9%E9%85%8D/" class="print-no-link">#阻抗匹配</a>
       
         <a href="/tags/%E6%97%A0%E5%8A%9F%E8%A1%A5%E5%81%BF/" class="print-no-link">#无功补偿</a>
-      
-        <a href="/tags/%E5%8A%9F%E7%8E%87%E5%9B%A0%E6%95%B0/" class="print-no-link">#功率因数</a>
       
     </div>
   
@@ -525,49 +469,6 @@
 
 
               
-  
-
-  <div class="license-box my-3">
-    <div class="license-title">
-      <div>混合开关电容宽带阻抗匹配网络研究</div>
-      <div>https://brandon-hao.github.io/2026/07/13/混合开关电容宽带阻抗匹配网络研究/</div>
-    </div>
-    <div class="license-meta">
-      
-        <div class="license-meta-item">
-          <div>Author</div>
-          <div>Menghao Zhang</div>
-        </div>
-      
-      
-        <div class="license-meta-item license-meta-date">
-          <div>Posted on</div>
-          <div>July 13, 2026</div>
-        </div>
-      
-      
-      
-        <div class="license-meta-item">
-          <div>Licensed under</div>
-          <div>
-            
-              
-              
-                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
-                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
-                    <i class="iconfont icon-cc-by"></i>
-                  </span>
-                </a>
-              
-            
-          </div>
-        </div>
-      
-    </div>
-    <div class="license-icon iconfont"></div>
-  </div>
-
-
 
               
                 <div class="post-prevnext my-3">
